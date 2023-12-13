@@ -18,7 +18,10 @@ jobs:
   create_and_deploy_app:
     name: Create Vaultwarden app on Heroku, build, and deploy.
     runs-on: ubuntu-latest
-    steps:
+    steps:              
+    - name: Docker Login
+      uses: docker/login-action@v3.0.0
+            
     - uses: docker-practice/actions-setup-docker@master
       with:
         docker_channel: stable
