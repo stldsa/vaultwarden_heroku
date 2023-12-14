@@ -22,7 +22,7 @@ jobs:
       with:
         docker_channel: stable
         # this value please see https://github.com/AkihiroSuda/moby-snapshot/releases
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         fetch-depth: 1
     - run: curl https://cli-assets.heroku.com/install.sh | sh
